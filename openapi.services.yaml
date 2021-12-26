@@ -9850,7 +9850,6 @@ definitions:
       - updatedAt
       - __v
 tags:
-  - name: submit
   - name: User
   - name: Material
   - name: Field
