@@ -3902,6 +3902,7 @@ definitions:
     properties:
       email:
         type: string
+        description: 'The email of user'
       name:
         type: string
       password:
