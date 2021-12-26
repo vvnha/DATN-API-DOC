@@ -225,7 +225,7 @@ paths:
               default: timeout=5
   /api/v1/users/update/:{userId}:
     patch:
-      description: Used to update info (name)
+      description: Used to update user info (name)
       summary: Update info
       tags:
         - User
