@@ -7357,7 +7357,6 @@ definitions:
       email:
         type: string
         description: 'The email of user'
-        description: 'The email of user'
       role:
         type: string
     required:
