@@ -679,7 +679,7 @@ paths:
           in: formData
           required: true
           type: string
-          description: ''
+          description: 'the image file'
       responses:
         '200':
           description: OK
@@ -949,17 +949,17 @@ paths:
           in: formData
           required: true
           type: string
-          description: ''
+          description: 'Name of material'
         - name: description
           in: formData
           required: true
           type: string
-          description: ''
+          description: 'Description of material'
         - name: uploadedFile
           in: formData
           required: true
           type: string
-          description: ''
+          description: 'The doc file is uploaded'
       responses:
         '200':
           description: OK
@@ -1235,7 +1235,7 @@ paths:
         - name: Body
           in: body
           required: true
-          description: ''
+          description: 'The phrase is searched'
           schema:
             $ref: '#/definitions/searchmaterialrequest'
       responses:
@@ -1334,12 +1334,12 @@ paths:
           in: formData
           required: true
           type: string
-          description: ''
+          description: 'Name of material'
         - name: uploadedFile
           in: formData
           required: true
           type: string
-          description: ''
+          description: 'File Doc is uploaded'
       responses:
         '200':
           description: OK
@@ -3724,7 +3724,7 @@ paths:
           in: formData
           required: true
           type: string
-          description: ''
+          description: 'It includes two document files'
         - name: type
           in: formData
           required: true
@@ -5433,6 +5433,7 @@ definitions:
         description: 'The email of user'
       code:
         type: string
+        description: 'The code is getting via Gmail'
       password:
         type: string
       confirm_password:
@@ -6291,6 +6292,7 @@ definitions:
     properties:
       gmailList:
         type: array
+        description: 'An array conclude a list of email who is invited'
         items:
           type: string
     required:
