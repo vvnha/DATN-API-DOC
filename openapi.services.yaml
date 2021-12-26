@@ -3905,12 +3905,16 @@ definitions:
         description: 'The email of user'
       name:
         type: string
+        description: 'The name of user'
       password:
         type: string
+        description: 'account password'
       confirm_password:
         type: string
+        description: 'confirm account password to check'
       role:
         type: string
+        description: 'The role of user'
     required:
       - email
       - name
@@ -3977,8 +3981,10 @@ definitions:
     properties:
       email:
         type: string
+        description: 'The email of user'
       password:
         type: string
+        description: 'The password must be correct if forget we use forget password function'
     required:
       - email
       - password
@@ -4038,6 +4044,7 @@ definitions:
         type: string
       email:
         type: string
+        description: 'The email of user'
       avatar_Image:
         type: string
       createdAt:
@@ -4094,8 +4101,10 @@ definitions:
     properties:
       email:
         type: string
+        description: 'The email of user'
       password:
         type: string
+        description: 'The password must be correct if forget we use forget password function'
     required:
       - email
       - password
@@ -4133,8 +4142,10 @@ definitions:
     properties:
       email:
         type: string
+        description: 'The email of user'
       password:
         type: string
+        description: 'The password must be correct if forget we use forget password function'
     required:
       - email
       - password
@@ -4171,6 +4182,7 @@ definitions:
     properties:
       name:
         type: string
+        description: 'Change the name you want'
     required:
       - name
   Updateinfoofuser:
@@ -4371,6 +4383,7 @@ definitions:
         type: string
       email:
         type: string
+        description: 'The email of user'
       password:
         type: string
       confirm_password:
@@ -4510,6 +4523,7 @@ definitions:
         type: string
       email:
         type: string
+        description: 'The email of user'
       role:
         type: string
       avatar_Image:
@@ -4744,6 +4758,7 @@ definitions:
         type: string
       email:
         type: string
+        description: 'The email of user'
       role:
         type: string
     required:
@@ -5247,6 +5262,7 @@ definitions:
         type: string
       email:
         type: string
+        description: 'The email of user'
       role:
         type: string
       avatar_Image:
@@ -5381,6 +5397,7 @@ definitions:
     properties:
       email:
         type: string
+        description: 'The email of user'
     required:
       - email
   Sendcodetoresetpassword:
@@ -5413,6 +5430,7 @@ definitions:
     properties:
       email:
         type: string
+        description: 'The email of user'
       code:
         type: string
       password:
@@ -6058,6 +6076,7 @@ definitions:
         type: string
       email:
         type: string
+        description: 'The email of user'
       role:
         type: string
       avatar_Image:
@@ -6546,9 +6565,11 @@ definitions:
     properties:
       name:
         type: string
+        description: 'The name of new Field'
       type_num:
         type: integer
         format: int32
+        description: 'The index of new Field'
     required:
       - name
       - type_num
@@ -6561,9 +6582,11 @@ definitions:
     properties:
       name:
         type: string
+        description: 'The name of new Field'
       type_num:
         type: integer
         format: int32
+        description: 'The index of new Field'
     required:
       - name
       - type_num
@@ -6578,12 +6601,16 @@ definitions:
     properties:
       material_id:
         type: string
+        description: 'The Id of material you want to report'
       copied_material_id:
         type: string
+        description: 'The Id of your material'
       content:
         type: string
+        description: 'The content of your report'
       isCopy:
         type: boolean
+        description: 'Your valuation whether it is copying or not'
     required:
       - material_id
       - copied_material_id
@@ -6693,8 +6720,10 @@ definitions:
     properties:
       content:
         type: string
+        description: 'The content of report you want to update'
       isCopy:
         type: boolean
+        description: 'Change the valuation'
     required:
       - content
       - isCopy
@@ -7075,6 +7104,7 @@ definitions:
       minSimi:
         type: number
         format: double
+        description: 'The minimal similarity when materials records which is greater than the similarity'
     required:
       - minSimi
   Getlistofdocswhichcopiedmaterials:
@@ -7326,6 +7356,7 @@ definitions:
         type: string
       email:
         type: string
+        description: 'The email of user'
         description: 'The email of user'
       role:
         type: string
@@ -9103,14 +9134,18 @@ definitions:
       materialId: 61a890fa94c18f7c0cab6623
       cmtId: ''
       content: This is side cmt content
+      description: 'The content of comment'
     type: object
     properties:
       materialId:
         type: string
+        description: 'The material Id the user want to comment'
       cmtId:
         type: string
+        description: 'It will be null if the user comment, if they want to reply please fill the id of comment'
       content:
         type: string
+        description: 'The content of comment'
     required:
       - materialId
       - cmtId
@@ -9221,6 +9256,7 @@ definitions:
     properties:
       content:
         type: string
+        description: 'The content of reply comment'
     required:
       - content
   Updatecomment(notiscreatebycmtuser)1:
